@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="300dp"
+        android:layout_height="72dp"
+        android:orientation="vertical"
+        android:background="@drawable/gradian_row"
+        >
+        <TextView
+            android:id="@+id/tv_hoten_list"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+
+            android:gravity="left"
+            android:text="Họ và Tên: "
+            android:textColor="#932300"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tv_sodt"
+                android:layout_width="140dp"
+                android:layout_height="35dp"
+                android:gravity="left"
+                android:text="Số Điện Thoại: "
+                android:textColor="#932300"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_sodt_list"
+                android:layout_width="140dp"
+                android:layout_height="35dp"
+                android:textColor="#932300"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <ImageView
+        android:id="@+id/btn_edit_sv"
+        android:layout_width="35dp"
+        android:layout_height="50dp"
+        android:src="@drawable/img_edit"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        />
+    <ImageView
+        android:id="@+id/btn_delete_sv"
+        android:layout_width="35dp"
+        android:layout_height="50dp"
+        android:src="@drawable/img_delete"
+        android:layout_marginTop="10dp"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>
